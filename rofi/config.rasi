@@ -1,0 +1,71 @@
+configuration{
+
+display-drun: "    Applications: ";
+drun-display-format: "{icon} {name}";
+font: "JetBrainsMono Nerd Font";
+show-icons:true;
+}
+
+@theme "/dev/null"
+
+*{
+text: #f7f8fa;
+elements:#000333;
+
+background-color: #5c84bf;
+}
+
+
+element{
+padding: 20px;
+text-size: 10px;
+background-color: @elements;
+border-radius: 0px;
+color: @elements;
+text-color: @elements;
+}
+
+element selected.normal{
+text-color:#4d5054;
+border: 9px;
+border-radius: 10px;
+color: @elements;
+foreground: @elements;
+background-color: @elements;
+}
+
+element normal active{
+color: @elements;
+}
+
+element selected active{
+foreground: @elements;
+}
+
+element-text{
+text-color: @text;
+background-color : @elements;
+}
+
+element-icon{
+size: 30px;
+background-color: @elements;
+}
+
+inputbar{
+children: [prompt, entry];
+border-color: #5c84bf;
+padding: 15px;
+color: #5c84bf;
+}
+
+
+listview{
+lines: 8;
+}
+
+
+button-selected{
+background-color: #0a1930 ;
+
+}
